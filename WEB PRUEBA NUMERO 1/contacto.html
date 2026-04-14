@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | TECNOCONTROL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+    <div class="contenedor">
+        <div class="logo">
+    <img src="img/logo tecno blanco.png" alt="Tecnocontrol">
+    <span>TECNOCONTROL</span>
+</div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<!-- PORTADA -->
+<section class="hero-interno hero-contacto">
+    <div class="overlay-interno">
+        <div class="contenedor">
+            <h2>Contacto</h2>
+            <p>Estamos a disposición para responder consultas, coordinar visitas 
+                técnicas y brindar asesoramiento profesional.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENIDO CONTACTO -->
+<section class="contacto-seccion">
+    <div class="contenedor contacto-grid">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="contacto-info">
+            <span class="contacto-etiqueta">Contacto</span>
+            <h3>Contactanos hoy</h3>
+            <p>
+                Si necesitás más información sobre nuestros servicios, equipos o proyectos,
+                completá el formulario y nos pondremos en contacto a la brevedad.
+            </p>
+
+            <div class="contacto-cards">
+                <div class="contacto-card">
+                    <h4>Ubicación</h4>
+                    <p>San Miguel de Tucumán, Tucumán, Argentina</p>
+                </div>
+
+                <div class="contacto-card">
+                    <h4>Teléfono</h4>
+                    <p>+54 9 381 361 2851</p>
+                </div>
+
+                <div class="contacto-card">
+                    <h4>Email</h4>
+                    <p>lucasteran1270@gmail.com</p>
+                </div>
+
+                <div class="contacto-card">
+                    <h4>Horarios</h4>
+                    <p>Lunes a Viernes · 8:00 a 18:00 hs</p>
+                    <p>MIERCOLES HASTA LAS 17:00 HS.
+                </div>
+            </div>
+        </div>
+
+        <!-- COLUMNA DERECHA -->
+        <div class="contacto-formulario-box">
+            <span class="contacto-etiqueta">Escribinos</span>
+            <h3>¿En qué te podemos ayudar?</h3>
+
+            <form name="contacto" method="POST" data-netlify="true" action="/gracias.html" class="formulario-contacto">
+                <input type="hidden" name="form-name" value="contacto">
+
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-formulario">Enviar consulta</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
